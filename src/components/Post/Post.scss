@@ -1,0 +1,15 @@
+.post-details {
+	width: 43vw;
+	min-height: 15vw;
+	border: 1px solid black;
+	padding: 1vw;
+	display: flex;
+	flex-direction: column;
+	row-gap: 1.2vw;
+	overflow: auto;
+
+	& h1 {
+		font-size: 1.8vw;
+		font-weight: bold;
+	}
+}

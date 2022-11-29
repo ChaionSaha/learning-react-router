@@ -6,6 +6,7 @@ import Friends from './components/Friends/Friends';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
+import Post from './components/Post/Post';
 import Posts from './components/Posts/Posts';
 
 function App() {
@@ -21,7 +22,9 @@ function App() {
 					path='friends/:friendId'
 					element={<FriendDetail />}
 				></Route>
-				<Route path='posts' element={<Posts />}></Route>
+				<Route path='posts' element={<Posts />}>
+					<Route path=':postId' element={<Post />}></Route>
+				</Route>
 				{/* Not found page */}
 				<Route path='*' element={<NotFound />}></Route>
 			</Routes>
