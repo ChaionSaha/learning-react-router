@@ -1,0 +1,9 @@
+.user {
+	border: 1px solid black;
+	padding: 2vw;
+	border-radius: 1vw;
+	margin-bottom: 2vw;
+	& button {
+		cursor: pointer;
+	}
+}
