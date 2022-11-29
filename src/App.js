@@ -1,11 +1,12 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+import './App.scss';
 import About from './components/About/About';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import Friends from './components/Friends/Friends';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import NotFound from './components/NotFound/NotFound';
+import Posts from './components/Posts/Posts';
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 					path='friends/:friendId'
 					element={<FriendDetail />}
 				></Route>
+				<Route path='posts' element={<Posts />}></Route>
 				{/* Not found page */}
 				<Route path='*' element={<NotFound />}></Route>
 			</Routes>

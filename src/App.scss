@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	font-size: inherit;
+}
+
+.App {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5vw;
+
+	row-gap: 2vw;
+	font-size: 1.3vw;
+}

@@ -12,8 +12,8 @@ const Friends = () => {
 	}, []);
 
 	return (
-		<div>
-			<h1>This is friends section</h1>
+		<div className='users-div'>
+			{/* <h1>Friends</h1> */}
 			<div className='users'>
 				{users.map((user) => {
 					return <Friend user={user} key={user.id}></Friend>;

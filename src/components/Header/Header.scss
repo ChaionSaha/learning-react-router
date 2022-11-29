@@ -1,6 +1,26 @@
-nav {
-	& * {
-		margin-right: 0.7vw;
-		text-decoration: none;
+.header {
+	& h1 {
+		font-size: 2.9vw;
+		font-weight: 900;
+		letter-spacing: 1px;
+		margin-bottom: 2vw;
+		-webkit-text-stroke: 2px black;
+		color: transparent;
+	}
+
+	& nav {
+		width: 35vw;
+		display: flex;
+		justify-content: space-around;
+
+		& * {
+			text-decoration: none;
+			font-size: 1.6vw;
+			transition: all 200ms;
+			&:link,
+			&:visited {
+				color: #6cb4ee;
+			}
+		}
 	}
 }

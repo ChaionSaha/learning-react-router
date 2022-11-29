@@ -4,11 +4,11 @@ import './Header.scss';
 
 const Header = () => {
 	let activeStyle = {
-		textDecoration: 'underline',
+		// textDecoration: 'underline',
 		color: 'green',
 	};
 	return (
-		<div>
+		<div className='header'>
 			<h1>Welcome to fuckbook</h1>
 			<nav>
 				<NavLink
@@ -34,6 +34,14 @@ const Header = () => {
 					}
 				>
 					About
+				</NavLink>
+				<NavLink
+					to='/posts'
+					style={({ isActive }) =>
+						isActive ? activeStyle : undefined
+					}
+				>
+					Posts
 				</NavLink>
 			</nav>
 		</div>
